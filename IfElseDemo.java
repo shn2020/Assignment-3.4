@@ -24,17 +24,21 @@ public class IfElseDemo {
 		
 		if (groupSize != 0 ) JOptionPane.showMessageDialog(null," Number of People = " + numPeople + 
 							   		"\n Group size = " + groupSize);
-
+		
+		/*
+		*/
+	
 		strNumPlayers = JOptionPane.showInputDialog(null,"Enter the number of players: ");
 		numPlayers = Integer.parseInt(strNumPlayers);
 		
 		if (numPlayers >= 11 && numPlayers <= 55) {
 			teamSize = numPlayers / 11;
-			JOptionPane.showMessageDialog(null," Number of Players = " + numPlayers + 
-							   "\n Team size = " + teamSize);
+			
 		}
-		else JOptionPane.showMessageDialog(null," Number of Players = " + numPlayers + 
-							"\n Team size = " + 1);
+		else teamSize = 1;
+
+		JOptionPane.showMessageDialog(null," Number of Players = " + numPlayers + 
+							   "\n Team size = " + teamSize);
 		
 		
 	}
